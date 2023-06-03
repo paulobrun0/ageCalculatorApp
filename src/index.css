@@ -8,7 +8,20 @@
 	--color-red: #ff5959;
 }
 
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body , input{
+	font-family: 'Poppins', sans-serif;
+}
+
 body {
-  font-family: 'Poppins', sans-serif;
   background: var(--color-light-grey);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
 }

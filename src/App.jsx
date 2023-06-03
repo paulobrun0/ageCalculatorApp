@@ -1,10 +1,10 @@
 import "./App.css";
-
+import FormDate from "./components/FormDate";
 function App() {
   return (
-    <>
-      <div className="App">Teste</div>
-    </>
+    <div className="containerApp">
+      <FormDate />
+    </div>
   );
 }
 
