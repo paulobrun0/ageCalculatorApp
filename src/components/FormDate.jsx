@@ -1,6 +1,7 @@
 import styles from "./FormDate.module.css";
 
 import arrowDown from "../../src/assets/arrowDown.svg";
+import { ResultAge } from "./ResultAge";
 
 const FormDate = () => {
   return (
@@ -26,6 +27,10 @@ const FormDate = () => {
       <button className={styles.btnCalc}>
         <img src={arrowDown} alt="" />
       </button>
+
+      <div className={styles.containerResultAge}>
+        <ResultAge />
+      </div>
     </div>
   );
 };
