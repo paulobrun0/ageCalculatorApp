@@ -28,9 +28,7 @@ const FormDate = () => {
         <img src={arrowDown} alt="" />
       </button>
 
-      <div className={styles.containerResultAge}>
-        <ResultAge />
-      </div>
+      <ResultAge />
     </div>
   );
 };
