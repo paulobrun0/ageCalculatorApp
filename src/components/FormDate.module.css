@@ -14,11 +14,13 @@
 
 .form .label {
   text-transform: uppercase;
-  font-weight: bold;
+  font-weight: 700;
   letter-spacing: 0.25rem;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  font-size: 14px;
+  line-height: 21px;
 }
 
 .form .label .inputDate {
@@ -45,4 +47,32 @@
 }
 .btnCalc:hover {
   background: var(--color-black);
+}
+
+@media (max-width: 768px) {
+  .containerFormData {
+    padding: 48px 1.5rem;
+  }
+  .form {
+    padding: 0;
+    padding-bottom: 2.9688rem;
+  }
+  .form .label {
+    font-size: 12px;
+  }
+
+  .form .label .inputDate {
+    max-width: 5.4794rem;
+    padding: 0.75rem 1rem;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.01em;
+  }
+
+  .btnCalc {
+    top: 8rem;
+    left: 10.3125rem;
+    width: 4rem;
+    height: 4rem;
+  }
 }

@@ -16,3 +16,10 @@
 .containerResultAge p span {
   color: var(--color-purple);
 }
+
+@media (max-width: 768px) {
+  .containerResultAge p {
+    font-size: 3.5rem;
+    line-height: 3.85rem;
+  }
+}

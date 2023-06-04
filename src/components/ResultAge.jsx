@@ -4,13 +4,13 @@ export const ResultAge = () => {
   return (
     <div className={styles.containerResultAge}>
       <p>
-        <span>- -</span>years
+        <span>38</span>years
       </p>
       <p>
-        <span>- -</span>months
+        <span>10</span>months
       </p>
       <p>
-        <span>- -</span>days
+        <span>5</span>days
       </p>
     </div>
   );

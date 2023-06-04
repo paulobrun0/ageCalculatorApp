@@ -1,13 +1,18 @@
-.App{
-  height: 100vh; 
+.App {
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  
 }
 
 .container {
   background: white;
   max-width: 52.5rem;
-  border-radius: 1.5rem 1.5rem 12.5rem 1.5rem;      
+  border-radius: 1.5rem 1.5rem 12.5rem 1.5rem;
+}
+
+@media (max-width: 56.25rem) {
+  .container {
+    border-radius: 1.5rem 1.5rem 6.25rem 1.5rem;
+  }
 }

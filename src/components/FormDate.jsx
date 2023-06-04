@@ -22,8 +22,6 @@ const FormDate = () => {
           <input className={styles.inputDate} type="text" placeholder="YYYY" />
         </label>
       </form>
-
-      <hr />
       <button className={styles.btnCalc}>
         <img src={arrowDown} alt="" />
       </button>
