@@ -3,7 +3,9 @@ import FormDate from "./components/FormDate";
 function App() {
   return (
     <div className="App">
-      <FormDate />
+      <div className="container">
+        <FormDate />
+      </div>
     </div>
   );
 }

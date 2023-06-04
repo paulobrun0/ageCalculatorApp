@@ -20,8 +20,4 @@ body , input{
 
 body {
   background: var(--color-light-grey);
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 100vh;
 }

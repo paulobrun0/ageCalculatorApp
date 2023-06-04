@@ -1,12 +1,18 @@
-.containerResultAge p {
-  font-weight: 800;
-  font-style: italic;
-  font-size: 6.5rem;
-  letter-spacing: -.2rem;
-  display: flex;
-  gap: .5rem;
+.containerResultAge {
+  margin-top: 1.25rem;
 }
 
-.containerResultAge p  span{
+.containerResultAge p {
+  display: flex;
+  gap: 0.5rem;
+  font-style: italic;
+  font-weight: 800;
+  font-size: 6.4375rem;
+  line-height: 7.0625rem;
+  letter-spacing: -0.02em;
+  color: var(--color-black);
+}
+
+.containerResultAge p span {
   color: var(--color-purple);
 }
