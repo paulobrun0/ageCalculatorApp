@@ -1,8 +1,8 @@
 import styles from "./FormDate.module.css";
-
+import audioFile from "../../src/assets/parabens.mp3";
 import arrowDown from "../../src/assets/arrowDown.svg";
 import { ResultAge } from "./ResultAge";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const FormDate = () => {
   const [dayInput, setDayInput] = useState("");
@@ -12,6 +12,8 @@ const FormDate = () => {
   const [dayResult, setDayResult] = useState("");
   const [monthResult, setMonthResult] = useState("");
   const [yearResult, setYearResult] = useState("");
+
+  const [playAudio, setPlayAudio] = useState(false);
 
   const dataAtual = new Date();
 
@@ -55,6 +57,7 @@ const FormDate = () => {
       setDayResult(day);
       setMonthResult(0);
       setYearResult(resultYear);
+      setPlayAudio(true);
       console.log("Parabéns");
     } else if (dayInputFloat < day && monthInputFloat === month) {
       setDayResult(day);
@@ -70,6 +73,18 @@ const FormDate = () => {
       setYearResult(resultYear - 1);
     }
   }
+
+  useEffect(() => {
+    if (playAudio) {
+      const audio = new Audio(audioFile);
+      audio.play();
+
+      setTimeout(() => {
+        audio.pause();
+        audio.currentTime = 0;
+      }, 15390);
+    }
+  }, [playAudio]);
 
   return (
     <div className={styles.containerFormData}>
