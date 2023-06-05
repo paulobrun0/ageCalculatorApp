@@ -1,16 +1,17 @@
+/* eslint-disable react/prop-types */
 import styles from "./ResultAge.module.css";
 
-export const ResultAge = () => {
+export const ResultAge = ({ dayResult, monthResult, yearResult }) => {
   return (
     <div className={styles.containerResultAge}>
       <p>
-        <span>38</span>years
+        <span>{yearResult}</span>years
       </p>
       <p>
-        <span>10</span>months
+        <span>{monthResult}</span>months
       </p>
       <p>
-        <span>5</span>days
+        <span>{dayResult}</span>days
       </p>
     </div>
   );
