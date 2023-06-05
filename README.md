@@ -1,6 +1,6 @@
 # Age Calculator App
 
-<img src="/wallpaper.png" alt="wallpaper do projeto Age Calculator App" />
+<img src="/wallpaper.jpeg" alt="wallpaper do projeto Age Calculator App" />
 
 ## Calculadora de Idade em React
 
