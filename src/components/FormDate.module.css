@@ -7,7 +7,6 @@
   color: var(--color-grey);
   display: flex;
   gap: 2rem;
-  /* padding-right: 11.5rem; */
   padding-right: 10%;
   padding-right: min(11.5rem, 10vw);
   border-bottom: 1px solid var(--color-line);
@@ -33,6 +32,29 @@
   font-weight: bold;
   font-size: 2rem;
   letter-spacing: 0.1rem;
+}
+
+.inputDateInvalid {
+  max-width: 10rem;
+  border-radius: 8px;
+  border: 2px solid var(--color-red);
+  padding: 0.75rem 1.5rem;
+  font-weight: bold;
+  font-size: 2rem;
+  letter-spacing: 0.1rem;
+}
+
+.invalidLabel {
+  color: var(--color-red);
+}
+
+.errorMessage {
+  color: var(--color-red);
+  font-size: 14px;
+  font-weight: 400;
+  font-style: italic;
+  line-height: 1.3125rem;
+  padding-top: 0.5rem;
 }
 
 .containerBtn {

@@ -5,13 +5,17 @@ export const ResultAge = ({ dayResult, monthResult, yearResult }) => {
   return (
     <div className={styles.containerResultAge}>
       <p>
-        <span>{yearResult}</span>years
+        <span>{yearResult}</span>
+        {yearResult !== 1 ? "years" : "year"}
+      </p>
+
+      <p>
+        <span>{monthResult} </span>
+        {monthResult > 1 ? "months" : "month"}
       </p>
       <p>
-        <span>{monthResult}</span>months
-      </p>
-      <p>
-        <span>{dayResult}</span>days
+        <span>{dayResult}</span>
+        {dayResult > 0 ? "days" : "day"}
       </p>
     </div>
   );
